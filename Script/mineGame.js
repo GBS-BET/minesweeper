@@ -1,136 +1,3 @@
-/*class Calculator extends BaseCustomControl {
-   constructor ({el, parent}) {
-      super({el, parent});
-
-      this.outputbar = new OutputBar({el: 'output-bar', parent: this});
-      this.buttonbar = new ButtonBar({el: 'button-bar', parent: this});
-      
-      this.clear();
-   }
-  
-   appendPercent () {
-      console.log('percent');
-      console.log(this.currentOperand * 100  / 400);
-   }
-
-   clear (value) {
-      this.currentOperand = '0';
-      this.prevOperand = '';
-      this.currentOperand = '0';
-      this.operationSign;
-      this.outputbar.historybar.el.innerText = '';
-
-      this.displayNumber();
-
-      console.log('Clear');
-   }
-
-   apendHistoryNumbers (value) {
-      this.outputbar.historybar.el.innerText = this.prevOperand + value;
-   }
-
-   displayNumber () {
-
-      this.outputbar.displaybar.el.innerText = this.currentOperand;
-   }
-
-   appendNumber (value) {
-      this.currentOperand += value;
-      
-      this.displayNumber();
-   }
-
-   appendOperation (value) {
-   }
-
-   appendMathSign (value) {
-   
-   }
-
-  addCommaBetweenNumbers (numb) {
-      let int, decimal, minusSign, result;
-
-      if (-1 !== numb.indexOf('-')) {
-         minusSign = numb[0];
-         int = (+(numb.slice(1)).split('.')[0]).toLocaleString();
-      }
-
-      int = (+(numb.split('.')[0])).toLocaleString();
-      decimal = numb.split('.')[1];
-
-      
-      if (decimal === undefined) {         // 104 - 114 ternary solution
-         result =  int.toLocaleString();
-      }
-
-      if (decimal === '') {
-         result = `${int}.`;
-      }
-
-      if (decimal) {
-         result = `${int}.${decimal}`;
-      }
-   
-      return result;
-  }
-
-   equal () {
-      console.log('equality');
-
-      var result;
-
-      switch (this.operationSign) {
-         case '+':
-           result = +this.prevOperand + +this.currentOperand;
-          
-         break
-
-          case '-':
-           result = this.prevOperand - this.currentOperand;
-           
-         break;
-            
-         case '/':result
-         debugger
-            result = this.prevOperand / this.currentOperand;
-            console.log(result);
-           
-         break; 
-         
-         case '*':
-            result = this.prevOperand * this.currentOperand;
-           
-         break;
-      }
-
-      result = result.toString();
-          
-      if (Number.isSafeInteger(+result)) {
-          this.currentOperand = result;
-      }
-
-      if (!Number.isSafeInteger(+result)) {
-          this.currentOperand = (+result).toExponential();
-      }
-      
-      this.displayNumber(this.equal.name);
-   }
-   
-   deleteNumber () {
-      this.currentOperand = this.currentOperand.slice(0, -1);
-
-      if ((1 === this.currentOperand.length && '-' === this.currentOperand[0]) || '' === this.currentOperand) {
-         this.currentOperand = '0';
-      }
-      
-      this.displayNumber();
-   }
-
-   OffCalc () {
-      console.log('Off');
-   }
-}*/
-
 class MineGame extends BaseCustomControl {
    constructor ({el, parent}) {
       super({el, parent});
@@ -174,6 +41,7 @@ class MineGame extends BaseCustomControl {
             MENU_MOBILE_SCREEN_CONTAINER = document.querySelector('#MenuMobileScreenContainer'),
             MENU_MOBILE_SCREN_BODY = document.querySelector('#MenuMobileScreenBody'),
             BOOKE_BURGER_MENU_CONTAINER = document.querySelector('#BookeBurgerMenuContaienr'),
+            BOOKE_LINK = document.querySelector('#BookLink'),
             BOOKE_MEETING_BUTTON = document.querySelector('#BookMeeting'),
             BURGER_MENU_BUTTTON = document.querySelector('#BurgerMenuButton'),
             EXPLANATION = document.querySelector('#Explanation'),
@@ -305,7 +173,7 @@ class MineGame extends BaseCustomControl {
       if (SCREEN_SIZE_700.matches) {
          BURGER_MENU_BUTTTON.classList.add('dsp-block');
          
-         BOOKE_BURGER_MENU_CONTAINER.removeChild(BOOKE_MEETING_BUTTON);
+         BOOKE_BURGER_MENU_CONTAINER.removeChild(BOOKE_LINK);
 
          SOUND_EFFECTS_BAR.removeChild(SOUND_CONTAINER);
          SOUND_EFFECTS_BAR.removeChild(VOCE_CONTAINER);
@@ -313,12 +181,12 @@ class MineGame extends BaseCustomControl {
          MENU_MOBILE_SCREN_BODY.appendChild(SOUND_CONTAINER);
          MENU_MOBILE_SCREN_BODY.appendChild(VOCE_CONTAINER);
 
-         MENU_MOBILE_SCREN_BODY.appendChild(BOOKE_MEETING_BUTTON);
+         MENU_MOBILE_SCREN_BODY.appendChild(BOOKE_LINK);
       } else {
-         if (!BOOKE_BURGER_MENU_CONTAINER.contains(BOOKE_MEETING_BUTTON)) {
+         if (!BOOKE_BURGER_MENU_CONTAINER.contains(BOOKE_LINK)) {
             BOOKE_BURGER_MENU_CONTAINER.appendChild(SOUND_CONTAINER);
             BOOKE_BURGER_MENU_CONTAINER.appendChild(VOCE_CONTAINER);
-            BOOKE_BURGER_MENU_CONTAINER.appendChild(BOOKE_MEETING_BUTTON);
+            BOOKE_BURGER_MENU_CONTAINER.appendChild(BOOKE_LINK);
          }
       }
 
@@ -332,19 +200,19 @@ class MineGame extends BaseCustomControl {
             MENU_MOBILE_SCREN_BODY.appendChild(SOUND_CONTAINER);
             MENU_MOBILE_SCREN_BODY.appendChild(VOCE_CONTAINER);
 
-            BOOKE_BURGER_MENU_CONTAINER.removeChild(BOOKE_MEETING_BUTTON);
+            BOOKE_BURGER_MENU_CONTAINER.removeChild(BOOKE_LINK);
 
-            MENU_MOBILE_SCREN_BODY.appendChild(BOOKE_MEETING_BUTTON);
+            MENU_MOBILE_SCREN_BODY.appendChild(BOOKE_LINK);
          }
 
          if (SCREEN_SIZE_DESKTOP.matches) {
             BURGER_MENU_BUTTTON.classList.remove('dsp-block');
             
-            if (!BOOKE_BURGER_MENU_CONTAINER.contains(BOOKE_MEETING_BUTTON)) {
+            if (!BOOKE_BURGER_MENU_CONTAINER.contains(BOOKE_LINK)) {
                SOUND_EFFECTS_BAR.appendChild(SOUND_CONTAINER);
                SOUND_EFFECTS_BAR.appendChild(VOCE_CONTAINER);
 
-               BOOKE_BURGER_MENU_CONTAINER.appendChild(BOOKE_MEETING_BUTTON);
+               BOOKE_BURGER_MENU_CONTAINER.appendChild(BOOKE_LINK);
             }
          }
       });
