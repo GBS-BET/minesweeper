@@ -12,6 +12,10 @@ class HeaderContactInfoContainer extends HeaderBase {
         this.burgerMenuButton.el.setAttribute('id', 'BurgerMenuButton');
         this.bookMeeting.el.setAttribute('id', 'BookMeeting');
 
+        // To add ID
+
+        this.bookLink.el.setAttribute('id', 'BookLink');
+
         // to add class
 
         this.el.classList.add('dsp-flex');
