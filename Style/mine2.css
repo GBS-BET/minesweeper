@@ -1,0 +1,291 @@
+@font-face {
+    font-family: proximaNova-bold;
+    src: url(../Font/ProximaNova-Bold.ttf);
+}
+
+@font-face {
+    font-family: proximaNova-semibold;
+    src: url(../Font/ProximaNova-Semibold.ttf);
+}
+
+@font-face {
+    font-family: proximaNova-regular;
+    src: url(../Font/proximanova-regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: proximaNova-regular;
+    font-size: 16px;
+    color: #E1E3E6;
+}
+
+body {
+    background-color: #101C2E;
+    background-image: url('../Image/content/BGDecoration.png');
+    background-position-y: -43px;
+    background-position-x: -43px;
+}
+
+/* Global settings*/
+
+/*width global settings*/
+
+.container, header, header > div, .stack-container > div:nth-child(2) > input, .bet-button {
+    width: 100%;
+}
+
+
+
+/* height global settings */
+
+.settings-container > div, .stack-container > div:nth-child(2) > input {
+    height: 48px;
+}
+
+.betBar > div > div:nth-child(1) > div:nth-child(2) > button, .betBar > div > div:nth-child(1) > div:nth-child(2) > div, .bet-button {
+    height: 44px;
+}
+
+.container, content, footer {
+    display: block;
+}
+
+ /* flex settings */
+
+.container > div:nth-child(2), header, content > div:nth-child(2),content > div:nth-child(2)  > div:nth-child(2) > div, content > div:nth-child(2)  > div:nth-child(2) > div > div, .betBar > div > div:nth-child(1) > div:nth-child(2) {
+    display: flex;
+}
+
+.container > div:nth-child(2), content > div:nth-child(2)  > div:nth-child(2) > div > div {
+    justify-content: center;
+}
+
+content > div:nth-child(2)  > div:nth-child(2) > div, .betBar > div > div:nth-child(1) > div:nth-child(2) {
+    flex-wrap: wrap;
+}
+
+content > div:nth-child(2)  > div:nth-child(2) > div, .betBar > div > div:nth-child(1) > div:nth-child(2){
+    gap: 8px;
+}
+
+/* Margin or padding global settings*/
+
+.settings-container > div:nth-child(2), content > div:nth-child(2) {
+    margin-top: 2px;
+}
+
+footer, .bet-button {
+    margin-top: 12px;
+}
+
+content > div:nth-child(2) > div:nth-child(1), content > div:nth-child(2)  > div:nth-child(3) {
+    padding-left: 68px;
+}
+
+/* bakcground global settings  */
+
+.settings-container > div, header, .content-Header {
+    background: #112035;
+}
+
+content > div:nth-child(2)  > div:nth-child(2) > div > div, .stack-container > div:nth-child(2) > input {
+    background: #17263D;
+}
+
+.betBar > div > div:nth-child(1) > div:nth-child(2) > button, .betBar > div > div:nth-child(1) > div:nth-child(2) > div {
+    background: #23324A;
+}
+
+body, footer {
+    background-repeat: no-repeat;
+}
+
+/* font global settings */
+
+header :nth-child(1) p, .betBar > div > div:nth-child(1) > div:nth-child(2) > div {
+    text-align: left;
+}
+
+.content-Header, .betBar h3 {
+    font-family: proximaNova-regular;
+}
+
+.stack-of-valute, .stack-container > div:nth-child(2) > input, .stack-container > div:nth-child(2) > div:nth-child(2) > p {
+    font-family: proximaNova-semibold;
+}
+
+/* border global settings */ 
+
+content > div:nth-child(2)  > div:nth-child(2) > div > div, 
+.betBar > div > div:nth-child(1) > div:nth-child(2) > button, 
+.betBar > div > div:nth-child(1) > div:nth-child(2) > div, 
+.stack-container > div:nth-child(2) > input, .bet-button {
+    border-radius: 4px;
+}
+
+/* position global settings */
+
+.betBar > div > div:nth-child(1) > div:nth-child(2) > div, .stack-container > div:nth-child(2) {
+    position: relative;
+}
+
+.betBar > div > div:nth-child(1) > div:nth-child(2) > div > img, .stack-of-valute  {
+    position: absolute;
+} 
+
+/* transition global settings */
+
+.settings-container > div, content > div:nth-child(2) > div:nth-child(2) > div > div, .betBar > div > div:nth-child(1) > div:nth-child(2) > button, .betBar > div > div:nth-child(1) > div:nth-child(2) > div, .bet-button {
+    transition: 0.3s;
+}
+
+/* local settings */
+
+.container > div:nth-child(2) {
+    margin-top: 73px;
+}
+
+.settings-container > div {
+    width: 48px;
+    padding: 12px;
+    margin-left: 2px;
+}
+
+.settings-container > div:nth-child(1) {
+    height: 41px;
+}
+
+/* Header */
+
+header {
+    padding: 15px 30px 16px 30px;
+}
+
+header :nth-child(2) p {
+    text-align: center;
+    font-size: 18px;
+}
+
+header :nth-child(3) p {
+    text-align: right;
+}
+
+/* content */
+
+content {
+    width: 1349px;
+}
+
+.content-Header {
+    padding: 12px 20px 12px 20px;
+}
+
+content > div:nth-child(2) > div:nth-child(1) {
+    padding-top: 188px;
+    padding-right: 49px;
+}
+
+content > div:nth-child(2) > div:nth-child(2) {
+    padding-top: 46px;
+}
+
+content > div:nth-child(2) > div:nth-child(3) {
+    padding-top: 18px;
+}
+
+content > div:nth-child(2) {
+    background: radial-gradient(89.59% 89.59% at 51.21% 11.61%, #112036 60.37%, rgba(17, 32, 54, 0) 100%);
+}
+
+content > div:nth-child(2)  > div:nth-child(2) {
+    width: 532px;
+}
+
+content > div:nth-child(2) > div:nth-child(2) > div > div {
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 5px 0px #131F31;
+    background-image: url('../Image/content/decoration2.png');
+    background-repeat: no-repeat;
+    background-position-x: 38px;
+    background-position-y: 38px;
+}
+.betBar {
+    padding: 16px;
+    background: #101D2E;
+    font-size: 14px; 
+}
+
+.betBar h3 {
+    font-size: 14px;
+}
+
+.betBar > div > div:nth-child(1) p {
+    font-family: proximaNova-bold;
+}
+
+.betBar > div > div:nth-child(1) > div:nth-child(2) {
+    margin: 12px 0 16px 0;
+}
+
+.betBar > div > div:nth-child(1) > div:nth-child(2) > button {
+    width: 44px;
+}
+
+.betBar > div > div:nth-child(1) > div:nth-child(2) > div {
+    width: 108px;
+    padding: 12px 0 13px 13px;
+}
+
+.betBar > div > div:nth-child(1) > div:nth-child(2) > div > img {
+    top: 12px;
+    right: 13px;
+}
+
+.stack-container > div:nth-child(2) {
+    margin-top: 8px;
+}
+
+.stack-of-valute {
+    top: 15px;
+    right: 16px;
+    font-size: 14px;
+}
+
+.stack-container > div:nth-child(2) > input {
+    border: 1px solid #2B455C;
+    outline: none;
+    font-size: 14px;
+    padding: 13px 16px 13px 16px;
+}
+
+.bet-button {
+    background: #2387FF;
+}
+
+/* Board */
+
+
+
+/* footer*/
+
+footer {
+    height: 215px;
+    background-image: url('../Image/content/footerDecoration.png');
+    background-position-y: 103px;
+}
+
+/*events*/
+
+.dimand {
+    background: #2387ff33;
+    border-radius: 4px;
+    background-image: url('../Image/content/dimand.png');
+}
+
+

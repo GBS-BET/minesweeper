@@ -1,0 +1,90 @@
+
+@media screen and (max-width: 1439px) {
+    .mine-game-container {
+        transform: scale(0.9);
+    }
+
+    body {
+        background-size: cover;
+        background-position-y: center;
+        background-position-x: 100%;
+    }      
+  }
+
+  @media screen and (max-width: 1280px) {
+
+    body {
+        background-position-y: center;
+    }
+
+    .mine-game-container {
+        transform: scale(1);
+    }
+
+    .content {
+        padding-top: 15px;
+        
+    }
+
+    .mine-game-container {
+        transform: scale(1.0);
+    }
+
+    .mine-game-container {
+        width: 1209px;
+    }
+
+   .decoration-container {
+        padding: 118px 47px 24px 72px;
+
+    }
+
+   .mine-button-bar {
+        width: 402px;
+    }
+
+    .mine-button {
+        width: 74px;
+        height: 74px;
+    }
+
+    .bet-bar {
+        padding-left: 42px;
+    }
+
+    .to-set-mine-image {
+       
+        background-position: center center !important;
+        background-size: 82.4px;
+    }
+    
+    .tada {
+        background-size: 100%, 228%;
+    }
+
+    .animation-container {
+        top: 95%;
+    } 
+
+    .mine-pop-up-container {
+        top: -1%;
+    }
+
+    .animation-container {
+        background-size: 100%;
+        background-position-y: 70px;
+
+        height: 127px;
+
+        top: 576px;
+    }
+
+    .Cart-formines-container {
+        transform: scale(0.6);
+    }
+
+    .cart-of-mines-animtation {
+        top: -28px;
+    }
+
+  }

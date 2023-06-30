@@ -1,0 +1,107 @@
+@media screen and (max-width: 677px) {
+    .menu-mobile-screen-container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 9;
+    }
+
+    body {
+        background-size: contain;
+        background-position-y: 129%;
+    }
+
+    .content {
+        width: 100%;
+        margin-top: 6px;
+    }
+
+    #SettingBar {
+        display: none;
+    }
+
+    .booke-a-meeting {
+        width: 100%;
+    }
+
+    .decoration-container {
+        top: 506px;
+    }
+
+    .decoration-container > img {
+        width: 48%;
+    }
+
+    .mine-button-container {
+        width: 384px;
+        column-gap: 6px
+    }
+
+    .mine-button {
+        width: 72px;
+        height: 72px;
+
+       background-size: 18px;
+    }
+
+    .to-set-mine-image {
+        background-size: 80px;
+        background-position: center 0!important;
+    }
+
+    .tada {
+        background-size: 100%, 228% !important;
+    }
+
+    .bet-bar {
+        width: 396px;
+        top: 346px;
+
+        -webkit-transform: (-50%, 50%);
+        -ms-transform: translate(-50%, 50%);
+        -o-transform: translate(-50%, 50%);
+        transform: translate(-50%, 50%);
+    }
+
+    .level-button, .level-result-explanation, .level-result-mines, .stake, .bet-button-container > button {
+        height: 44px;
+    }
+
+   .animation-container {
+    background-size: 1000px;
+
+    top: 490px;
+    }
+
+    .Cart-formines-container {
+        transform: scale(0.5);
+        
+        top: -19px;
+        left: -52%;
+    }
+
+    .cart-of-mines-animtation {
+        top: -19px;
+    }
+
+    .menu-mobile-screen-body {
+        padding: 15px;
+    }
+
+    .level-container {
+        margin-top: 12px;
+    }
+
+    .bet-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bet-member {
+        order: 1;
+    }
+
+    .bet-member:first-child {
+        order: 2;
+    }
+}
