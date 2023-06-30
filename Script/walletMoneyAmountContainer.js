@@ -12,5 +12,6 @@ class WalletMoneyAmountContainer extends BaseCustomControl {
         
         this.amountOfMoney.el.classList.add('font-proximaNova-semibold');
         this.amountOfMoney.el.classList.add('font-size16');
+        this.amountOfMoney.el.classList.add('amount-of-money');
     }
 }
