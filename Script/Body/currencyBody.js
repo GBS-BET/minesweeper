@@ -4,11 +4,11 @@ class CurrencyBody extends BaseBody {
 
         this.stake = new BaseCustomControl({el: 'input', parent: this});
         this.stake.el.setAttribute('type', 'text');
-        this.stake.el.setAttribute('value', '5000');
+        this.stake.el.setAttribute('value', '10');
         this.fun = new BaseCustomControl({el: 'p', innerText: 'Fun', parent: this});
 
         this.stake.el.maxLength = 15;
-        this.stake.el.placeholder = 'Example: 50000';
+        this.stake.el.placeholder = 'Example: 100';
      
         // To add css class
 
