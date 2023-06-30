@@ -5,6 +5,7 @@ class LevelResultExplanation extends BaseCustomControl {
         this.explanation = new BaseCustomControl({el: 'input', parent: this});
 
         this.explanation.el.setAttribute('type', 'text');
+        this.explanation.el.setAttribute("readonly", "readonly");
 
         // To add css class
 
@@ -16,6 +17,7 @@ class LevelResultExplanation extends BaseCustomControl {
         this.explanation.el.classList.add('padding-16');
         this.explanation.el.classList.add('border-radius4');
         this.explanation.el.classList.add('bg-no-repeat');
+        this.explanation.el.classList.add('input-outline-none');
         this.explanation.el.classList.add('level-result-explanation');
 
         this.el.classList.add('level-result-explanation-container');
