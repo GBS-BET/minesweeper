@@ -3,7 +3,7 @@ class VoceContainer extends BaseCustomControl {
         super({el, parent});
 
         this.voceNameContainer = new BaseCustomControl({el: 'voce-name-container', parent: this});
-        this.voceSwitcherName = new BaseCustomControl({el: 'p', innerText: 'Voce', parent: this.voceNameContainer});
+        this.voceSwitcherName = new BaseCustomControl({el: 'p', innerText: 'Voice', parent: this.voceNameContainer});
 
         this.voceSwitcherContainer = new BaseCustomControl({el: 'voce-switcher-container', parent: this});
         this.voceSwitcherName = new VoceSwitcher({el: 'voce-switcher', type: 'checkbox', parent: this.voceSwitcherContainer});
