@@ -11,6 +11,7 @@ class CurrencyOfMoneyOfMyWalletContainer extends BaseCustomControl {
         
         this.currencyOfMyMoney.el.classList.add('font-proximaNova-bold');
         this.currencyOfMyMoney.el.classList.add('font-size14');
+        this.currencyOfMyMoney.el.classList.add('padding-8');
         this.currencyOfMyMoney.el.classList.add('currency-of-money');
     }
 }
