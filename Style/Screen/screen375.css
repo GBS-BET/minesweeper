@@ -1,0 +1,32 @@
+@media screen and (max-width: 610px) {
+    body {
+        background-size: 610px;
+    }
+}
+@media screen and (max-width: 536px) {
+    body {
+        background-position-y: 226px;
+    }
+    
+   .mine-button-container {
+        width: 324px;
+    }
+
+    .mine-button {
+        width: 60px;
+        height: 60px;
+    }
+
+    .bet-bar {
+        width: 348px;
+        top: 284px;
+    }
+
+    .animation-container {
+        top: 467px;
+    }
+
+    .rules  {
+        width: 400px;
+    }
+}

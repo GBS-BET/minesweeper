@@ -1,0 +1,37 @@
+
+@media only screen and (min-height: 1081px) {
+    .rules {
+        height: 684px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    body {
+        background-position-y: 147px;
+        background-size: contain;
+    }
+
+    .content {
+        padding-top: 31px;
+    }
+
+    .mine-game-container {
+        width: 1362px;
+    }
+
+    .decoration-container {
+        width: 343px;
+        padding-top: 189px;
+        padding-left: 62px;
+        padding-right: 24px;
+        padding-bottom: 80px;
+    }
+
+    .mine-button-bar {
+        width: 532px;
+    }
+
+    .animation-container {
+        top: 710px;
+    }
+  }
