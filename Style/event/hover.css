@@ -1,0 +1,67 @@
+/*global settings*/
+
+/*--- Components event ---*/
+
+.header-logo-container > img:hover  {
+    width: 28px;
+    height: 28px;
+
+    filter: brightness(0) saturate(100%) invert(49%) sepia(89%) saturate(7497%) hue-rotate(205deg) brightness(98%) contrast(99%);
+}
+
+.logo-and-name-container:hover .logo-image {
+    width: 28px;
+    height: 28px;
+
+    filter: brightness(0) saturate(100%) invert(49%) sepia(89%) saturate(7497%) hue-rotate(205deg) brightness(98%) contrast(99%);
+}
+
+.logo-and-name-container:hover .logo-name-container > p {
+    left: 5px;
+    opacity: 1;
+}
+
+
+
+  
+
+.mine-button-animationEffect:hover {
+    background-color: #1F304A;
+    background-image: url('../../Image/content/decoration2Hopver.svg');
+
+}
+.level-button:hover {
+    background-color: #304361;
+}
+
+.drop-down-level-button:hover {
+    background-color: #2A4A7A;
+}
+
+.bet-button:hover, .booke-a-meeting:hover {
+    background-color: #0169E7;
+}
+
+
+.cash-out-button-disable:hover {
+    background-color: #2387FF;
+    opacity: 0.5;
+}
+
+.list-of-level-container:hover {
+    background-color:  #2B3C57;
+}
+
+.eventHoverStyle-background-color, .eventHoverStyle-background-color:hover {
+    background-color: #415575;
+}
+
+/* --- Pop Up --*/
+
+.cancle-balance-button:hover {
+    background-color: #3C6BB0;
+}
+
+.increase-balance-button:hover {
+    background-color: #1D83FE;
+}
