@@ -59,7 +59,7 @@
 }
 
 @media screen and (max-width: 744px) {
-    /*body {
-        background-position-y: 119%;
-    }*/
+    .amount-of-money {
+        font-size: 12px;
+    }
 }
