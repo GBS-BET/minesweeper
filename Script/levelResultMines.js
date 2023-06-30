@@ -5,6 +5,7 @@ class LevelResultMines extends BaseCustomControl {
         this.mines = new BaseCustomControl({el: 'input', parent: this});
 
         this.mines.el.setAttribute('type', 'text');
+        this.mines.el.setAttribute("readonly", "readonly");
 
         // To add css class
 
@@ -17,6 +18,7 @@ class LevelResultMines extends BaseCustomControl {
         this.mines.el.classList.add('border-radius4');
         this.mines.el.classList.add('bg-no-repeat');
         this.mines.el.classList.add('level-result-mines');
+        this.mines.el.classList.add('input-outline-none');
         this.el.classList.add('level-result-mines-container');
 
     }
