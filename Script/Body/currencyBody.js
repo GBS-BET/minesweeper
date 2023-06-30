@@ -22,6 +22,7 @@ class CurrencyBody extends BaseBody {
         this.stake.el.classList.add('stake');
         this.stake.el.classList.add('border-radius4');
         this.stake.el.classList.add('font-proximaNova-semibold');
+        this.stake.el.classList.add('input-outline-none');
         this.stake.el.classList.add('font-size14');
 
         this.fun.el.classList.add('positon-absolute');
