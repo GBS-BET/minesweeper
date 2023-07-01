@@ -4,7 +4,7 @@ class HeaderContactInfoContainer extends HeaderBase {
 
         this.bookeBurgerMenuCOntaienr = new BaseCustomControl({el: 'booke-burger-menu-container', parent: this});
         this.bookLink = new BaseCustomControl({el: 'a', parent: this.bookeBurgerMenuCOntaienr});
-        this.bookMeeting = new BookAMeeting({el: 'button', innerText: 'Book a Meeting', parent: this.bookLink});
+        this.bookMeeting = new BookAMeeting({el: 'button', innerText: 'Contact Us', parent: this.bookLink});
         this.burgerMenuButton = new BurgerMenuButton({el: 'burger-menu-button', parent: this.bookeBurgerMenuCOntaienr});
         
         this.bookLink.el.href = 'https://www.behance.net/gbs33';
