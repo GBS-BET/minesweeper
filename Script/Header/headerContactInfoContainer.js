@@ -7,7 +7,7 @@ class HeaderContactInfoContainer extends HeaderBase {
         this.bookMeeting = new BookAMeeting({el: 'button', innerText: 'Contact Us', parent: this.bookLink});
         this.burgerMenuButton = new BurgerMenuButton({el: 'burger-menu-button', parent: this.bookeBurgerMenuCOntaienr});
         
-        this.bookLink.el.href = 'https://www.behance.net/gbs33';
+        this.bookLink.el.href = 'https://gbs.bet/form';
         this.bookeBurgerMenuCOntaienr.el.setAttribute('id', 'BookeBurgerMenuContaienr');
         this.burgerMenuButton.el.setAttribute('id', 'BurgerMenuButton');
         this.bookMeeting.el.setAttribute('id', 'BookMeeting');
