@@ -2,7 +2,7 @@ class InfluanceBalanceButtonContainer extends BaseCustomControl {
     constructor ({el, parent}) {
         super({el, parent});
 
-        this.cancleButtonInfluanceBalance = new BaseButton({el: 'button', innerText: 'Cansle', value: 'Cansle', parent: this});
+        this.cancleButtonInfluanceBalance = new BaseButton({el: 'button', innerText: 'Cansle', value: 'Cancel', parent: this});
         this.increaseButtonInfluanceBalance = new BaseButton({el: 'button', innerText: 'Increase', value: 'Increase', parent: this});
 
         // To add css class
