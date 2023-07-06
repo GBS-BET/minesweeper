@@ -920,3 +920,5 @@ body {
     width: 32px;
     background-image: url('../Image/svg/settings/rulesClose.svg');
 }
+
+#BookeBurgerMenuContaienr {display: none}
